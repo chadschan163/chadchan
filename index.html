@@ -342,7 +342,7 @@
       
         
           <p>与君初相见，犹如故人归。  </p>
-<p>记得那日，你我初识，娴静身影，一眼便刻在心头。<br>捧杯半日畅谈，同感之深甚，轻易烙下我一生的印记。<br>情不知所起，一往而深。即便一开始，就注定我输，也仍是忘不了，禁不住。<br>我只是想，与你一同看繁花似锦云卷云舒，踏天涯海角万水千山。<br>
+<p>记得那日，你我初识，娴静身影，一眼便刻在心头。<br>捧杯半日畅谈，同感之深甚，轻易烙下我一生的印记。<br>情不知所起，一往而深。即便一开始，就注定我输，也仍是忘不了，禁不住。<br>我只是想，与你一同看繁花似锦云卷云舒，踏天涯海角万水千山。
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/05/19/firstmet/#more" rel="contents">
@@ -481,10 +481,7 @@
       
         
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a><br>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/05/18/hello-hexo/#more" rel="contents">
@@ -622,24 +619,15 @@
 
       
         
-          
-            <h3 id="Oracle11g服务器安装密码有效期修改"><a href="#Oracle11g服务器安装密码有效期修改" class="headerlink" title="Oracle11g服务器安装密码有效期修改"></a>Oracle11g服务器安装密码有效期修改</h3><p>Oracle11g数据库默认密码有效期为180天，安装时不提供修改选项，只能创建完数据库后手动修改。若未修改密码有效期，则到期后仿真程序无法连接。</p>
-<p>修改时机：还原数据库后，以当前仿真系统用户密码进入数据库，执行修改命令。<br>修改命令：</p>
-<blockquote>
-<p>sql&gt;ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;</p>
-</blockquote>
-<p>执行此命令即可，不区分大小写。</p>
-<p>若仿真程序已经因为密码过期而无法连接，则修改后需要再次修改一下当前用户，以系统管理员身份登录，命令：</p>
-<blockquote>
-<p>sqlplus / as sysdba</p>
-</blockquote>
-<p>登陆后执行：</p>
-<blockquote>
-<p>sql&gt;alter user &lt;用户名&gt; identified by &lt;原密码&gt;;</p>
-</blockquote>
-<p>即可。</p>
-
-          
+          <h3 id="Oracle11g服务器安装密码有效期修改"><a href="#Oracle11g服务器安装密码有效期修改" class="headerlink" title="Oracle11g服务器安装密码有效期修改"></a>Oracle11g服务器安装密码有效期修改</h3><p>Oracle11g数据库默认密码有效期为180天，安装时不提供修改选项，只能创建完数据库后手动修改。若未修改密码有效期，则到期后仿真程序无法连接。</p>
+<p>修改时机：还原数据库后，以当前仿真系统用户密码进入数据库，执行修改命令。<br>修改命令：<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/02/oraclepwdlifetime/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
